@@ -170,7 +170,7 @@ class FrontPanel:
                 wires.append(wire)
         return wires    
 
-    def find_closest_intersection_by_dist(self):
+    def find_closest_intersection_by_dist(self) -> int:
         min_intersection_distance = float('inf')
         wire1 = self.get_wire_at_idx(0)
         wire2 = self.get_wire_at_idx(1)
@@ -184,7 +184,7 @@ class FrontPanel:
         
         return min_intersection_distance
 
-    def find_clostest_intersection_by_steps(self):
+    def find_clostest_intersection_by_steps(self) -> int:
         min_intersection_steps = float('inf')
         wire1 = self.get_wire_at_idx(0)
         wire2 = self.get_wire_at_idx(1)
