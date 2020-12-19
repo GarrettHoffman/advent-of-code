@@ -4,7 +4,7 @@ from typing import Dict
 from typing import List
 from typing import Set
 
-from utils.io import read_input_list
+from utils.io import read_input_blob
 
 class Passport():
     
@@ -70,11 +70,11 @@ class Passport():
 
 def part_one(input_file: bytes, required_fields: Set[str]) -> int:
     # read input file
-    inputs = read_input_list(input_file)
+    inputs = read_input_blob(input_file)
 
     # parse raw input and marshal into Passport object
     passports = []
-    for line in ''.join(inputs).split('\n\n'):
+    for line in inputs.split('\n\n'):
         passport = Passport.from_input_str(line.replace('\n', " "))
         passports.append(passport)
 
@@ -89,11 +89,11 @@ def part_one(input_file: bytes, required_fields: Set[str]) -> int:
 
 def part_two(input_file: bytes, required_fields: Set[str]) -> int:
     # read input file
-    inputs = read_input_list(input_file)
+    inputs = read_input_blob(input_file)
 
     # parse raw input and marshal into Passport object
     passports = []
-    for line in ''.join(inputs).split('\n\n'):
+    for line in inputs.split('\n\n'):
         passport = Passport.from_input_str(line.replace('\n', " "))
         passports.append(passport)
 
