@@ -1,10 +1,12 @@
 from typing import List
 
-def read_input_list(file: bytes, line_type: type = str) -> List[int]:
-    int_list = []
+def read_input_list(file: bytes, line_type: type = str, strip_new_line: bool = False) -> List[int]:
+    input_list = []
     with open(file) as f:
         for line in f.readlines():
-            int_list.append(line_type(line))
+            if strip_new_line:
+                line = line.replace('\n', '')
+            input_list.append(line_type(line))
 
-    return int_list
+    return input_list
         
