@@ -38,7 +38,7 @@ def binary_search(directions: str, item_range: List[int]):
             return binary_search(directions=directions[1:], item_range=item_range[midpoint:])
 
 
-def part_one(input_file: bytes, plane_size: Tuple[int, int]) -> int:
+def part_one(input_file: str, plane_size: Tuple[int, int]) -> int:
     # read input file
     inputs = read_input_list(input_file, strip_new_line=True)
 
@@ -53,7 +53,7 @@ def part_one(input_file: bytes, plane_size: Tuple[int, int]) -> int:
     return max_seat_id
 
 
-def part_two(input_file: bytes, plane_size: Tuple[int, int]) -> int:
+def part_two(input_file: str, plane_size: Tuple[int, int]) -> int:
     # read input file
     inputs = read_input_list(input_file, strip_new_line=True)
 

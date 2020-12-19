@@ -3,7 +3,7 @@ from typing import List
 
 from utils.io import read_input_blob
 
-def part_one(input_file: bytes) -> int:
+def part_one(input_file: str) -> int:
     # read input file
     inputs = read_input_blob(input_file)
 
@@ -20,7 +20,7 @@ def part_one(input_file: bytes) -> int:
     return total_answer_counts
 
 
-def part_two(input_file: bytes) -> int:
+def part_two(input_file: str) -> int:
      # read input file
     inputs = read_input_blob(input_file)
 

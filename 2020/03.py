@@ -31,7 +31,7 @@ class Area:
         return self.y >= self.length
 
 
-def part_one(input_file: bytes, slope: Tuple[int, int]) -> int:
+def part_one(input_file: str, slope: Tuple[int, int]) -> int:
     # read input file
     inputs = read_input_list(input_file)
 
@@ -53,7 +53,7 @@ def part_one(input_file: bytes, slope: Tuple[int, int]) -> int:
     return total_trees
 
 
-def part_two(input_file: bytes, slopes: List[Tuple[int, int]]) -> int:
+def part_two(input_file: str, slopes: List[Tuple[int, int]]) -> int:
     # iterate over slopes and run part one to get results
     results = []
     for slope in slopes:

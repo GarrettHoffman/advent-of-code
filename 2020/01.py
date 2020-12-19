@@ -2,7 +2,7 @@ import sys
 
 from utils.io import read_input_list
 
-def part_one(input_file: bytes, total: int) -> int:
+def part_one(input_file: str, total: int) -> int:
     # read in input file
     expenses = read_input_list(input_file, line_type=int)
 
@@ -14,7 +14,7 @@ def part_one(input_file: bytes, total: int) -> int:
             return value * other_value
 
 
-def part_two(input_file: bytes, total: int) -> int:
+def part_two(input_file: str, total: int) -> int:
     # read in input file
     expenses = read_input_list(input_file, line_type=int)
 

@@ -68,7 +68,7 @@ class Passport():
         return bool(re.fullmatch(r'\d{9}', self.data.get('pid')))
 
 
-def part_one(input_file: bytes, required_fields: Set[str]) -> int:
+def part_one(input_file: str, required_fields: Set[str]) -> int:
     # read input file
     inputs = read_input_blob(input_file)
 
@@ -87,7 +87,7 @@ def part_one(input_file: bytes, required_fields: Set[str]) -> int:
     return total_valid
 
 
-def part_two(input_file: bytes, required_fields: Set[str]) -> int:
+def part_two(input_file: str, required_fields: Set[str]) -> int:
     # read input file
     inputs = read_input_blob(input_file)
 

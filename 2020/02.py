@@ -27,7 +27,7 @@ class PasswordData:
         return (self.password[self.minimum-1] == self.letter) ^ (self.password[self.maximum-1] == self.letter)
 
         
-def part_one(input_file: bytes) -> int:
+def part_one(input_file: str) -> int:
     # read input file
     inputs = read_input_list(input_file)
 
@@ -43,7 +43,7 @@ def part_one(input_file: bytes) -> int:
     return total_valid
 
 
-def part_two(input_file: bytes) -> int:
+def part_two(input_file: str) -> int:
     # read input file
     inputs = read_input_list(input_file)
 
