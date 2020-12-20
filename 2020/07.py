@@ -6,8 +6,7 @@ from typing import Optional
 
 from utils.io import read_input_list
 
-#frozen=True makes dataclass immutable and hashable
-@dataclass(frozen=True)
+@dataclass
 class InnerBag:
     color: str
     amount: int
@@ -128,4 +127,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-    
