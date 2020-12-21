@@ -1,14 +1,14 @@
 import sys
 from dataclasses import dataclass
 
+from utils.io import read_input_blob
+
 
 @dataclass
 class NumberData:
     times_spoken: int
     last_spoken: int
     next_to_last_spoken: int = None
-
-from utils.io import read_input_blob
 
 
 def part_one(input_file: str, last_turn: int) -> int:
@@ -73,4 +73,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-    
