@@ -34,8 +34,8 @@ def part_one(input_file: str, last_turn: int) -> int:
     while turn != last_turn:
         turn += 1
         # if last spoken work was spoken for the first time then the cur num spoken
-        # is 0, otherwise it is the delta between the curruent turn and the last turn
-        # that the previous number was spoken
+        # is 0, otherwise it is the delta between the last spoken turn and the next to 
+        # last spoken turn
         if previously_spoken[last_spoken_num].times_spoken == 1:
             cur_num = 0
         else:
